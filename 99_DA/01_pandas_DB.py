@@ -10,6 +10,9 @@ from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from sklearn.datasets import make_classification, make_regression
 from sklearn.decomposition import PCA
 
+#data = rowdata를 encoding 후 배열로 변환한 데이터
+#data_trans = rowdata를 encoding, 배열로 변환한 후 null값까지 처리한 데이터
+
 # 1. DB에서 데이터 불러오기
 conn = pymysql.connect(host='localhost', user='amps',
                        password='123123', db='tip', charset='utf8',
