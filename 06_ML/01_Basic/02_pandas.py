@@ -32,3 +32,18 @@ titanic_df = pd.read_csv('train.csv')
 # titanic_df.drop([0,1,2], axis = 0, inplace=True)
 # print(titanic_df.head())
 
+#Index 객체
+# indexes = titanic_df.index
+# print(indexes)
+# print('index 객체 array값 :\n', indexes.values)
+# print(type(indexes.values))
+# print(indexes.values.shape)
+# print(indexes[:5].values)
+# print(indexes.values[:5])
+# print(indexes[6])
+
+#index of DF or Seires cannot be changed
+# indexes[0] = 5 #error
+
+#reset_index() : DF 또는 Series에 새로운 인덱스를 연속 숫자형으로 할당하며 기존 인덱스는 index라는 새로운 컬럼으로 추가됨
+print(titanic_df.reset_index(inplace=False))
