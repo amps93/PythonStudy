@@ -18,3 +18,5 @@ for i in range(len(a)):
 import numpy as np
 a = np.array(a)
 print(a.reshape(5,5))
+
+print(a)
