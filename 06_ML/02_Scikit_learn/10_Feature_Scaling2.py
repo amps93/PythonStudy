@@ -39,7 +39,7 @@ train_array와 test_array의 값이 동일하지 않으나 scale 시
 '''
 
 #올바른 방법
-print('올바른 방법')
+print('개선된 방법')
 scaler = MinMaxScaler()
 scaler.fit(train_array)
 train_scaled = scaler.transform(train_array)
