@@ -1,11 +1,4 @@
-import numpy as np
+from konlpy.tag import Okt
 
-a=np.random.rand(3,1)
-# print(np.random.rand(3,3))
-# print(np.zeros_like(a))
-
-b=np.zeros(1)
-print(a)
-print(b)
-
-print(np.dot(a,b.T))
+okt = Okt()
+okt.morphs('와 이런 것도 영화라고 차라리 뮤직비디오를 만드는 게 나을 뻔', stem = True)
